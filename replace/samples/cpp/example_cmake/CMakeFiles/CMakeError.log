@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/testpvcam/testpvcam/opencv-3.3.0/samples/cpp/example_cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4936f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4936f.dir/build.make CMakeFiles/cmTC_4936f.dir/build
+make[1]: Entering directory '/home/testpvcam/testpvcam/opencv-3.3.0/samples/cpp/example_cmake/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4936f.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -fPIC    -o CMakeFiles/cmTC_4936f.dir/CheckSymbolExists.c.o   -c /home/testpvcam/testpvcam/opencv-3.3.0/samples/cpp/example_cmake/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_4936f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4936f.dir/link.txt --verbose=1
+/usr/bin/cc  -fPIC     CMakeFiles/cmTC_4936f.dir/CheckSymbolExists.c.o  -o cmTC_4936f -rdynamic 
+CMakeFiles/cmTC_4936f.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_4936f.dir/build.make:97: recipe for target 'cmTC_4936f' failed
+make[1]: *** [cmTC_4936f] Error 1
+make[1]: Leaving directory '/home/testpvcam/testpvcam/opencv-3.3.0/samples/cpp/example_cmake/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_4936f/fast' failed
+make: *** [cmTC_4936f/fast] Error 2
+
+File /home/testpvcam/testpvcam/opencv-3.3.0/samples/cpp/example_cmake/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/testpvcam/testpvcam/opencv-3.3.0/samples/cpp/example_cmake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1a1ec/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1a1ec.dir/build.make CMakeFiles/cmTC_1a1ec.dir/build
+make[1]: Entering directory '/home/testpvcam/testpvcam/opencv-3.3.0/samples/cpp/example_cmake/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1a1ec.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_1a1ec.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_1a1ec
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1a1ec.dir/link.txt --verbose=1
+/usr/bin/cc  -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_1a1ec.dir/CheckFunctionExists.c.o  -o cmTC_1a1ec -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_1a1ec.dir/build.make:97: recipe for target 'cmTC_1a1ec' failed
+make[1]: *** [cmTC_1a1ec] Error 1
+make[1]: Leaving directory '/home/testpvcam/testpvcam/opencv-3.3.0/samples/cpp/example_cmake/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_1a1ec/fast' failed
+make: *** [cmTC_1a1ec/fast] Error 2
+
+

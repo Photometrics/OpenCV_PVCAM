@@ -1,0 +1,3 @@
+/home/testpvcam/testpvcam/opencv-3.3.0/samples/gpu/CMakeFiles/edit_cache.dir
+/home/testpvcam/testpvcam/opencv-3.3.0/samples/gpu/CMakeFiles/rebuild_cache.dir
+/home/testpvcam/testpvcam/opencv-3.3.0/samples/gpu/CMakeFiles/houghlines.dir
