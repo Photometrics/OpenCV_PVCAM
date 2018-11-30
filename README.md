@@ -1,13 +1,14 @@
 # Calling PVCAM from OpenCV
 
-This repository contains a script that will install OpenCV on Linux, it dependencies, and modify it so that it can be used with Photometrics camera's
+This repository contains a script that will install OpenCV on Linux, it dependencies, and modify it so that it can be used with Photometrics camera's.  In addition to OpenCV, this PVCAM adapter leverages the Avaris project https://github.com/AravisProject/aravis
 
 ## Getting Started
-Follow the bellow instructions to get OpenCV installed and able to communicate with Photometrics camera's
+Follow the instructions below.
 
 ### Prerequisites
 * You must already have the PVCAM driver installed which can be can be downloaded [here](https://www.photometrics.com/support/software/#software).
-* You will also need the PVCAM sdk installed which is available upon request
+* You will also need the PVCAM sdk installed which is available upon request.
+T
 
 ### Installing
 After you have cloned the repository, navigate to the folder that contains the opencv_install.sh script in a terminal and run 
