@@ -1,4 +1,4 @@
-# Calling PVCAM within OpenCV
+# Calling PVCAM from OpenCV
 
 This repository contains a script that will install OpenCV on Linux, it dependencies, and modify it so that it can be used with Photometrics camera's
 
